@@ -8,7 +8,7 @@
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    color: #1B73E8;
+    color: #0F62FE;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.25em;
@@ -23,19 +23,20 @@
 
 .link:active,
 .wysiwyg a:active {
-    color: #777777;
+    color: #6F6F6F;
     transition: none;
 }
 
 
-.link--text-alike {
+.link--text-color {
     color: inherit;
+    text-decoration-color: rgb(0 0 0 / 10%);
 }
 
 
-.link--no-hover,
-.link--no-hover:hover,
-.link--no-hover:active {
+.link--text-alike,
+.link--text-alike:hover,
+.link--text-alike:active {
     text-decoration: none;
     color: inherit;
 }
