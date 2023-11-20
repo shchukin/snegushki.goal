@@ -5,7 +5,6 @@
         font-size: 16px;
         line-height: 21px;
         color: #000000;
-        letter-spacing: -0.1px;
         white-space: nowrap;
     }
 
@@ -13,4 +12,5 @@
         font-size: 15px;
         line-height: 18px;
         color: #6F6F6F;
+        letter-spacing: 0;
     }

@@ -1,5 +1,5 @@
 .footer {
-
+    margin-top: 45px;
 }
     .footer__primary {
         display: flex;
@@ -77,30 +77,21 @@
     }
         .footer__primary {
             display: block;
-            /*align-items: flex-start;*/
-            /*justify-content: space-between;*/
             flex-wrap: wrap;
         }
             .footer__contacts {
 
             }
                 .footer__social {
-                    /*margin-bottom: 2px;*/
-                    /*margin-left: -6px;*/
-                    /*margin-right: -6px;*/
-                    /*display: flex;*/
-                    /*align-items: flex-start;*/
+
                 }
 
                 .footer__channel {
-                    /*font-size: 16px;*/
-                    /*line-height: 21px;*/
-                    /*color: #000000;*/
-                    /*letter-spacing: -0.1px;*/
+
                 }
 
                 .footer__channel + .footer__channel {
-                    /*margin-top: 16px;*/
+
                 }
 
             .footer__navigation {
@@ -110,25 +101,14 @@
                     overflow: hidden;
                 }
                     .footer__menu {
-                        /*display: inline-flex;*/
-                        /*flex-direction: column;*/
-                        /*font-size: 16px;*/
-                        /*line-height: 20px;*/
-                        /*white-space: nowrap;*/
+
                     }
                         .footer__menu .link {
-                            /*padding-top: 5px;*/
-                            /*padding-bottom: 4px;*/
-                            /*white-space: nowrap;*/
+
                         }
 
         .footer__addition {
-            /*margin-top: 43px;*/
-            /*border-top: 1px solid rgb(0 0 0 / 10%);*/
-            /*padding-top: 24px;*/
-            /*padding-bottom: 24px;*/
-            /*font-size: 16px;*/
-            /*line-height: 20px;*/
+
         }
             .footer__copyright {
 

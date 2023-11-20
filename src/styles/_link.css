@@ -28,7 +28,8 @@
 }
 
 
-.link--text-color {
+.link--text-color,
+.wysiwyg .link--text-color {
     color: inherit;
     text-decoration-color: rgb(0 0 0 / 10%);
 }
@@ -36,7 +37,10 @@
 
 .link--text-alike,
 .link--text-alike:hover,
-.link--text-alike:active {
+.link--text-alike:active,
+.wysiwyg .link--text-alike,
+.wysiwyg .link--text-alike:hover,
+.wysiwyg .link--text-alike:active {
     text-decoration: none;
     color: inherit;
 }
@@ -44,7 +48,10 @@
 
 .link--fake,
 .link--fake:hover,
-.link--fake:active {
+.link--fake:active,
+.wysiwyg .link--fake,
+.wysiwyg .link--fake:hover,
+.wysiwyg .link--fake:active {
     text-decoration: none;
     color: inherit;
     cursor: text;

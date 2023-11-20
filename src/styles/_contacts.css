@@ -1,0 +1,47 @@
+.contacts {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+}
+    .contacts__body {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+        .contacts__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        .contacts__description {
+            margin-top: 16px;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .contacts__param {
+            margin-top: 10px;
+        }
+            .contacts__sub-heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            .contacts__value {
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+    .contacts__map {
+        margin-top: 48px;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+        .contacts__widget {
+            width: 100%;
+            height: auto;
+        }
