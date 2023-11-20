@@ -73,7 +73,7 @@
 @media (width < 900px) {
 
     .footer {
-
+        margin-top: 28px;
     }
         .footer__primary {
             display: block;
@@ -123,7 +123,7 @@
 @media (width < 600px) {
 
     .footer {
-
+        margin-top: 22px;
     }
         .footer__primary {
 

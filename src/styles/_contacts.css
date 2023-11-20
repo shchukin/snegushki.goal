@@ -4,8 +4,8 @@
     align-items: flex-start;
 }
     .contacts__body {
-        flex-grow: 1;
-        flex-basis: 0;
+        flex-basis: 50%;
+        padding-right: 53px;
     }
         .contacts__heading {
             margin-top: 0;
@@ -38,10 +38,41 @@
 
     .contacts__map {
         margin-top: 48px;
-        flex-grow: 1;
-        flex-basis: 0;
+        flex-basis: 50%;
     }
         .contacts__widget {
             width: 100%;
             height: auto;
         }
+
+
+
+@media (width < 900px) {
+
+    .contacts {
+
+    }
+        .contacts__body {
+            padding-right: 32px;
+        }
+
+        .contacts__map {
+
+        }
+}
+
+
+@media (width < 600px) {
+
+    .contacts {
+        display: block;
+    }
+        .contacts__body {
+
+        }
+
+        .contacts__map {
+            margin-top: 32px;
+            /*flex-basis: 50%;*/
+        }
+}
