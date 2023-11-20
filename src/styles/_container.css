@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    max-width: calc(1024px + 2 * var(--container-padding));
+    max-width: calc(1200px + 2 * var(--container-padding));
     border-left: var(--container-padding) solid transparent;
     border-right: var(--container-padding) solid transparent;
     margin-left: auto;
