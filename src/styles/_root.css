@@ -6,18 +6,12 @@
     --transition-hover: 100ms ease;
     /*--transition-show: 1200ms var(--ease-out-quint);*/
     --image-fallback: #F3F5F4;
-    /*--container-padding: 40px;*/
+    --container-padding: 32px;
     /*--error: #FF0033;*/
 }
 
-/*@media (350px <= width < 600px) {*/
-/*    :root {*/
-/*        --container-padding: 24px;*/
-/*    }*/
-/*}*/
-
-/*@media (width < 350px) {*/
-/*    :root {*/
-/*        --container-padding: 16px;*/
-/*    }*/
-/*}*/
+@media (width < 1199px) {
+    :root {
+        --container-padding: 12px;
+    }
+}

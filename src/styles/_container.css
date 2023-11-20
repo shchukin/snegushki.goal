@@ -9,6 +9,6 @@
 @media (width < 600px) {
 
     .container {
-        width: auto;
+        max-width: calc(1024px + 2 * var(--container-padding));
     }
 }

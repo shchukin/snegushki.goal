@@ -1,0 +1,18 @@
+.media {
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px 6px;
+}
+    .media__icon {
+        vertical-align: top;
+        fill: #000000;
+        transition: fill var(--transition-hover);
+    }
+
+    .media:hover .media__icon {
+        fill: #0F62FE;
+    }
+
+    .media:active .media__icon {
+        translate: 0 1px;
+    }
