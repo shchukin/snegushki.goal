@@ -40,7 +40,7 @@
 
 @media not (600px <= width < 740px) {
 
-    .feed__list .teaser:nth-child(n+4) {
+    .feed__list .post:nth-child(n+4) {
         display: none;
     }
 }
