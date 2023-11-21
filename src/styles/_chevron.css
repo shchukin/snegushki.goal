@@ -1,0 +1,31 @@
+.chevron {
+    display: inline-flex;
+    align-items: flex-start;
+    vertical-align: top;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #0F62FE;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+    transition: text-decoration-color var(--transition-hover);
+}
+
+.chevron:hover {
+    text-decoration-color: rgb(15 98 254 / 40%);
+}
+    .chevron::after {
+        content: "";
+        display: block;
+        margin-left: 4px;
+        margin-top: 8px;
+        width: 18px;
+        height: 18px;
+        background-image: url("../vectors/arrow.svg");
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
