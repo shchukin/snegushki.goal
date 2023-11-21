@@ -3,6 +3,7 @@
     display: block;
     text-decoration: none;
     color: inherit;
+    height: 100%;
 }
     .category::before {
         content: "";
@@ -18,8 +19,13 @@
     .category__pic {
         vertical-align: top;
         width: 100%;
-        height: auto;
+        height: 100%;
         background-color: var(--image-fallback);
+        transition: filter var(--transition-hover);
+    }
+
+    .category:hover .category__pic {
+        filter: contrast(110%) sepia(5%);
     }
 
     .category__summary {
