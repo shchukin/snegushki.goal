@@ -59,8 +59,7 @@
 
         .collection__list {
             margin-top: 15px;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 26px;
+            display: block;
         }
             .collection__item {
 

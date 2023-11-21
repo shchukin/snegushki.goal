@@ -14,7 +14,7 @@
         }
 
         .post__preview:hover .post__pic {
-            filter: brightness(1.1) contrast(1.1);
+            filter: brightness(110%) contrast(110%);
         }
 
     .post__heading {
