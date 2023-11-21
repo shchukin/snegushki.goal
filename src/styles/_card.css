@@ -42,6 +42,7 @@
             .card__link {
                 color: inherit;
                 text-decoration: none;
+                letter-spacing: 0;
             }
 
 
