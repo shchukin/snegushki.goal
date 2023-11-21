@@ -3,7 +3,9 @@
     align-items: flex-start;
 }
     .catalog__header {
-        flex-basis: 25.1042%;
+        flex-basis: 0;
+        flex-grow: 25.1042;
+        padding-right: 16px;
         display: inline-flex;
         flex-direction: column;
     }
@@ -20,10 +22,12 @@
         }
 
         .catalog__link:hover {
-            color: #0F62FE;
+            color: var(--action-color);
             text-decoration-color: rgb(15 98 254 / 40%);
         }
 
     .catalog__body {
-        flex-basis: 74.8958%;
+        flex-basis: 0;
+        flex-grow: 74.8958;
+        overflow: hidden;
     }

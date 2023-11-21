@@ -7,7 +7,7 @@
     font-weight: 500;
     font-size: 26px;
     line-height: 32px;
-    color: #0F62FE;
+    color: var(--action-color);
     text-decoration-color: transparent;
     text-decoration-thickness: 2px;
     text-underline-offset: 7px;
@@ -24,7 +24,7 @@
         margin-top: 8px;
         width: 18px;
         height: 18px;
-        background-image: url("../vectors/arrow.svg");
+        background-image: url("arrow-right-blue.svg");
         background-size: 18px 18px;
         background-repeat: no-repeat;
         background-position: center center;

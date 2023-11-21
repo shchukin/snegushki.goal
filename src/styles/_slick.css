@@ -1,0 +1,94 @@
+.slick--catalog {
+    position: relative;
+}
+    .slick--catalog .slick-list {
+        margin-right: -4px;
+    }
+
+    .slick--catalog .slick-slide {
+        margin-right: 4px;
+    }
+
+    .slick--catalog .slick-arrow {
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        margin-top: -30px;
+        width: 50px;
+        height: 60px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .slick--catalog .slick-prev {
+        left: 0;
+    }
+
+    .slick--catalog .slick-next {
+        right: 0;
+    }
+        .slick--catalog .slick-arrow::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            margin: auto;
+            width: 38px;
+            height: 38px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+            border-radius: 50%;
+            transition: background-color var(--transition-hover);
+        }
+
+        .slick--catalog .slick-chevron {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            fill: #000000;
+            transition: fill var(--transition-hover);
+        }
+
+
+    .slick--catalog .slick-arrow:hover {
+
+    }
+        .slick--catalog .slick-arrow:hover::before {
+            background-color: var(--action-color);
+        }
+
+        .slick--catalog .slick-arrow:hover .slick-chevron {
+            fill: #FFFFFF;
+        }
+
+
+    .slick--catalog .slick-arrow:active {
+        translate: 0 1px;
+    }
+
+    .slick--catalog .slick-disabled,
+    .slick--catalog .slick-disabled:hover,
+    .slick--catalog .slick-disabled:active {
+        cursor: default;
+        translate: none;
+    }
+        .slick--catalog .slick-arrow.slick-disabled::before,
+        .slick--catalog .slick-arrow.slick-disabled:hover::before {
+            background-color: rgb(255 255 255 / 50%);
+        }
+
+        .slick--catalog .slick-arrow.slick-disabled .slick-chevron,
+        .slick--catalog .slick-arrow.slick-disabled:hover .slick-chevron {
+            fill: rgb(0 0 0 / 50%);
+        }

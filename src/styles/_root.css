@@ -7,6 +7,7 @@
     /*--transition-show: 1200ms var(--ease-out-quint);*/
     --image-fallback: #F3F5F4;
     --container-padding: 32px;
+    --action-color: #0F62FE;
     /*--error: #FF0033;*/
 }
 

@@ -10,7 +10,7 @@
     }
 
     .media:hover .media__icon {
-        fill: #0F62FE;
+        fill: var(--action-color);
     }
 
     .media:active .media__icon {

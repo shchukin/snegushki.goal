@@ -8,7 +8,7 @@
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    color: #0F62FE;
+    color: var(--action-color);
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.3125em;
@@ -37,7 +37,7 @@
 .link--text-color:hover,
 .wysiwyg .link--text-color:hover {
     text-decoration-color: rgb(15 98 254 / 60%);
-    color: #0F62FE;
+    color: var(--action-color);
 }
 
 
