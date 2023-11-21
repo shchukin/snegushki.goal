@@ -23,7 +23,7 @@
 @media (width < 900px) {
 
     .collection {
-
+        margin-top: 49px;
     }
         .collection__heading {
 
