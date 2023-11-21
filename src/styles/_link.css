@@ -34,6 +34,12 @@
     text-decoration-color: rgb(0 0 0 / 10%);
 }
 
+.link--text-color:hover,
+.wysiwyg .link--text-color:hover {
+    text-decoration-color: rgb(15 98 254 / 60%);
+    color: #0F62FE;
+}
+
 
 .link--text-alike,
 .link--text-alike:hover,
