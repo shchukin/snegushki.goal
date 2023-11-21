@@ -10,7 +10,8 @@
     /*--error: #FF0033;*/
 }
 
-@media (width < 1199px) {
+@media (width < 900px) {
+
     :root {
         --container-padding: 12px;
     }

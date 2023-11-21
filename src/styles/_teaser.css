@@ -5,6 +5,8 @@
         display: block;
     }
         .teaser__pic {
+            width: 100%;
+            height: auto;
             border-radius: 2px;
             vertical-align: top;
             background-color: var(--image-fallback);

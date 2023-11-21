@@ -1,21 +1,86 @@
 .feed {
     position: relative;
+    margin-top: 40px;
+    border-top: 1px solid rgb(0 0 0 / 10%);
+    padding-top: 16px;
 }
     .feed__heading {
-
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 32px;
     }
 
     .feed__list {
+        margin-top: 20px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 12px;
     }
-        .feed__item {
-
-        }
 
     .feed__details {
         position: absolute;
         right: 0;
-        top: 0;
+        top: 16px;
     }
+
+
+/* Диапазон 600-740 проблемный. Три плитки не влезают.
+ * Выводим четвёртую, но только на этом диапазоне,
+ * и делаем две колонки. На остальных диапазонах скрываем.
+ */
+
+@media (600px <= width < 740px) {
+
+    .feed__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media not (600px <= width < 740px) {
+
+    .feed__list .teaser:nth-child(n+4) {
+        display: none;
+    }
+}
+
+
+
+
+@media (width < 600px) {
+
+    .feed {
+        /*position: relative;*/
+        /*margin-top: 40px;*/
+        /*border-top: 1px solid rgb(0 0 0 / 10%);*/
+        /*padding-top: 16px;*/
+        border-top: none;
+        padding-top: 0;
+    }
+        .feed__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*font-weight: bold;*/
+            /*font-size: 32px;*/
+            /*line-height: 32px;*/
+        }
+
+        .feed__list {
+            margin-top: 15px;
+            /*display: grid;*/
+            grid-template-columns: repeat(1, 1fr);
+            gap: 26px;
+        }
+            .feed__item {
+
+            }
+
+        .feed__details {
+            position: static;
+            margin-top: 26px;
+        }
+            .feed__details .button {
+                width: 100%;
+            }
+}
