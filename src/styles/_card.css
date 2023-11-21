@@ -10,7 +10,8 @@
     }
         .card__pic {
             vertical-align: top;
-            max-width: 100%;
+            width: 100%;
+            max-width: 187px;
             height: auto;
         }
 
