@@ -1,0 +1,21 @@
+.feed {
+    position: relative;
+}
+    .feed__heading {
+
+    }
+
+    .feed__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+        .feed__item {
+
+        }
+
+    .feed__details {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }

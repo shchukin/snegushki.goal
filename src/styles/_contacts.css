@@ -1,5 +1,5 @@
 .contacts {
-    margin-top: 40px;
+    margin-top: 52px;
     display: flex;
     align-items: flex-start;
 }
@@ -43,6 +43,7 @@
         .contacts__widget {
             width: 100%;
             height: auto;
+            border-radius: 2px;
         }
 
 
