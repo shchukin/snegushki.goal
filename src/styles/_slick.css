@@ -1,5 +1,7 @@
 .slick--catalog {
     position: relative;
+    padding-top: 4px; /* здесь фейдер .slick--catalog .slick-next::after */
+    padding-bottom: 4px; /* здесь фейдер .slick--catalog .slick-next::after */
 }
     .slick--catalog .slick-list {
         margin-right: -4px;
@@ -20,8 +22,6 @@
         padding: 0;
         background-color: transparent;
         text-indent: 200%;
-        white-space: nowrap;
-        overflow: hidden;
         cursor: pointer;
     }
 
@@ -92,3 +92,26 @@
         .slick--catalog .slick-arrow.slick-disabled:hover .slick-chevron {
             fill: rgb(0 0 0 / 50%);
         }
+
+    .slick--catalog .slick-arrow::after {
+        content: "";
+        position: absolute;
+        top: -200px;
+        bottom: -200px;
+        display: block;
+        width: 1px;
+        background-color: rgb(0 0 0 / 8%);
+        transition: opacity 500ms ease;
+    }
+
+    .slick--catalog .slick-prev::after {
+        left: 0;
+    }
+
+    .slick--catalog .slick-next::after {
+        right: 0;
+    }
+
+    .slick--catalog .slick-arrow.slick-disabled::after {
+        opacity: 0;
+    }
