@@ -3,6 +3,9 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 4px;
 }
+
+@media (900px <= width) {
+
     .categories-listing__short-1 {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -30,3 +33,20 @@
         grid-row-start: 1;
         grid-row-end: 3;
     }
+}
+
+
+@media (width < 900px) {
+
+    .categories-listing {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (width < 600px) {
+
+    .categories-listing {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
