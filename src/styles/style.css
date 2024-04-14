@@ -1,5 +1,5 @@
 @import url("../vendors/normalize/normalize.css");
-@import url("../vendors/slick/slick.css");
+@import url("../vendors/swiper/swiper-bundle.min.css");
 @import url("_box-sizing.css");
 @import url("_visuallyhidden.css");
 @import url("_root.css");
@@ -23,4 +23,4 @@
 @import url("_features.css");
 @import url("_catalog.css");
 @import url("_chevron.css");
-@import url("_slick.css");
+@import url("_swiper.css");

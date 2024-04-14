@@ -1,17 +1,9 @@
-.slick--catalog {
+.swiper--catalog {
     position: relative;
-    padding-top: 4px; /* здесь фейдер .slick--catalog .slick-next::after */
-    padding-bottom: 4px; /* здесь фейдер .slick--catalog .slick-next::after */
+    padding-top: 4px; /* здесь фейдер .swiper--catalog .swiper__control--next::after */
+    padding-bottom: 4px; /* здесь фейдер .swiper--catalog .swiper__control--next::after */
 }
-    .slick--catalog .slick-list {
-        margin-right: -4px;
-    }
-
-    .slick--catalog .slick-slide {
-        margin-right: 4px;
-    }
-
-    .slick--catalog .slick-arrow {
+    .swiper--catalog .swiper__control {
         position: absolute;
         z-index: 100;
         top: 50%;
@@ -25,14 +17,14 @@
         cursor: pointer;
     }
 
-    .slick--catalog .slick-prev {
+    .swiper--catalog .swiper__control--prev {
         left: 0;
     }
 
-    .slick--catalog .slick-next {
+    .swiper--catalog .swiper__control--next {
         right: 0;
     }
-        .slick--catalog .slick-arrow::before {
+        .swiper--catalog .swiper__control::before {
             content: "";
             position: absolute;
             left: 0;
@@ -49,7 +41,7 @@
             transition: background-color var(--transition-hover);
         }
 
-        .slick--catalog .slick-chevron {
+        .swiper--catalog .swiper__chevron {
             position: absolute;
             left: 0;
             top: 0;
@@ -61,39 +53,39 @@
         }
 
 
-    .slick--catalog .slick-arrow:hover {
+    .swiper--catalog .swiper__control:hover {
 
     }
-        .slick--catalog .slick-arrow:hover::before {
+        .swiper--catalog .swiper__control:hover::before {
             background-color: var(--action-color);
         }
 
-        .slick--catalog .slick-arrow:hover .slick-chevron {
+        .swiper--catalog .swiper__control:hover .swiper__chevron {
             fill: #FFFFFF;
         }
 
 
-    .slick--catalog .slick-arrow:active {
+    .swiper--catalog .swiper__control:active {
         translate: 0 1px;
     }
 
-    .slick--catalog .slick-disabled,
-    .slick--catalog .slick-disabled:hover,
-    .slick--catalog .slick-disabled:active {
+    .swiper--catalog .swiper__control--disabled,
+    .swiper--catalog .swiper__control--disabled:hover,
+    .swiper--catalog .swiper__control--disabled:active {
         cursor: default;
         translate: none;
     }
-        .slick--catalog .slick-arrow.slick-disabled::before,
-        .slick--catalog .slick-arrow.slick-disabled:hover::before {
+        .swiper--catalog .swiper__control.swiper__control--disabled::before,
+        .swiper--catalog .swiper__control.swiper__control--disabled:hover::before {
             background-color: rgb(255 255 255 / 50%);
         }
 
-        .slick--catalog .slick-arrow.slick-disabled .slick-chevron,
-        .slick--catalog .slick-arrow.slick-disabled:hover .slick-chevron {
+        .swiper--catalog .swiper__control.swiper__control--disabled .swiper__chevron,
+        .swiper--catalog .swiper__control.swiper__control--disabled:hover .swiper__chevron {
             fill: rgb(0 0 0 / 50%);
         }
 
-    .slick--catalog .slick-arrow::after {
+    .swiper--catalog .swiper__control::after {
         content: "";
         position: absolute;
         top: -200px;
@@ -104,14 +96,14 @@
         transition: opacity 500ms ease;
     }
 
-    .slick--catalog .slick-prev::after {
+    .swiper--catalog .swiper__control--prev::after {
         left: 0;
     }
 
-    .slick--catalog .slick-next::after {
+    .swiper--catalog .swiper__control--next::after {
         right: 0;
     }
 
-    .slick--catalog .slick-arrow.slick-disabled::after {
+    .swiper--catalog .swiper__control.swiper__control--disabled::after {
         opacity: 0;
     }

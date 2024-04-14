@@ -1,14 +1,17 @@
 (function ($) {
 
-
-    $(document).ready(function () {
-        $('.slick--catalog .slick__plugin').slick({
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: false,
-            prevArrow: $('.slick-prev'),
-            nextArrow: $('.slick-next')
-        });
+    const catalogSlider = new Swiper('.swiper--catalog', {
+        navigation: {
+            prevEl: '.swiper__control--prev',
+            nextEl: '.swiper__control--next',
+            disabledClass: 'swiper__control--disabled',
+        },
+        mousewheel: {
+            forceToAxis: true,
+        },
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 4,
     });
 
 })(jQuery);

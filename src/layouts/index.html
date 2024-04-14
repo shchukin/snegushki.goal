@@ -54,7 +54,7 @@
 
 
         <div class="container">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aspernatur dolor, exercitationem explicabo impedit labore, maiores molestiae nesciunt possimus quis reiciendis repudiandae. At incidunt, non! Ducimus eligendi eos expedita fugit inventore officiis, omnis pariatur quia tempora! A commodi consectetur dolore dolores doloribus eaque enim ipsum laboriosam minus, non quae quaerat repudiandae, suscipit. Ab doloribus earum nam neque officia possimus qui reprehenderit soluta voluptates voluptatibus. Aperiam atque beatae culpa cumque delectus dicta dolore dolorem eaque eligendi, est expedita impedit ipsa iste molestiae nihil nulla numquam perferendis perspiciatis possimus praesentium provident quae quaerat quidem quisquam, quo ratione, saepe? A accusamus animi autem commodi consequatur debitis delectus deserunt dignissimos ducimus ea eaque excepturi harum iste libero, officiis provident quidem quis quod sapiente similique sit sunt totam unde ut voluptates. Delectus maiores sapiente voluptatibus! Asperiores hic iusto, molestias natus nisi numquam rerum suscipit temporibus. Distinctio ducimus earum expedita fuga iusto porro praesentium, provident repudiandae. Ab aperiam at dolor, doloremque excepturi, natus non repellendus sequi vel veritatis voluptate, voluptatem? Aspernatur autem culpa deserunt dignissimos ducimus est excepturi fugit labore nobis numquam, optio quaerat quo sapiente sit soluta, totam velit veniam voluptatum. Blanditiis culpa eum exercitationem fugit placeat praesentium quibusdam sit. Dolorem eveniet praesentium sunt?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur doloremque ducimus fuga, id incidunt, laborum libero natus placeat quasi qui rem, reprehenderit sint suscipit vero. Dignissimos distinctio magnam velit.
             <section class="catalog">
                 <div class="catalog__header">
                     <div class="catalog__menu">
@@ -69,9 +69,13 @@
                     </div>
                 </div>
                 <div class="catalog__body">
-                    <div class="slick slick--catalog">
-                        <div class="slick__plugin">
-                            <div>
+
+                    <!-- Slider main container -->
+                    <div class="swiper swiper--catalog">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
                                 <article class="card card--price-in">
                                     <a class="card__preview" href="#">
                                         <img class="card__pic"
@@ -95,7 +99,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div>
+                            <div class="swiper-slide">
                                 <article class="card card--price-in">
                                     <a class="card__preview" href="#">
                                         <img class="card__pic"
@@ -119,7 +123,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div>
+                            <div class="swiper-slide">
                                 <article class="card card--price-in">
                                     <a class="card__preview" href="#">
                                         <img class="card__pic"
@@ -143,7 +147,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div>
+                            <div class="swiper-slide">
                                 <article class="card card--price-in">
                                     <a class="card__preview" href="#">
                                         <img class="card__pic"
@@ -167,7 +171,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div>
+                            <div class="swiper-slide">
                                 <article class="card card--price-in">
                                     <a class="card__preview" href="#">
                                         <img class="card__pic"
@@ -191,7 +195,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div>
+                            <div class="swiper-slide">
                                 <article class="card card--price-in">
                                     <a class="card__preview" href="#">
                                         <img class="card__pic"
@@ -215,7 +219,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div>
+                            <div class="swiper-slide">
                                 <article class="card card--price-in">
                                     <a class="card__preview" href="#">
                                         <img class="card__pic"
@@ -239,7 +243,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div>
+                            <div class="swiper-slide">
                                 <article class="card card--price-in">
                                     <a class="card__preview" href="#">
                                         <img class="card__pic"
@@ -263,7 +267,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div>
+                            <div class="swiper-slide">
                                 <article class="card card--price-in">
                                     <a class="card__preview" href="#">
                                         <img class="card__pic"
@@ -287,7 +291,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div>
+                            <div class="swiper-slide">
                                 <article class="card card--price-in">
                                     <a class="card__preview" href="#">
                                         <img class="card__pic"
@@ -311,7 +315,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div>
+                            <div class="swiper-slide">
                                 <article class="card card--price-in">
                                     <a class="card__preview" href="#">
                                         <img class="card__pic"
@@ -335,7 +339,7 @@
                                     </div>
                                 </article>
                             </div>
-                            <div>
+                            <div class="swiper-slide">
                                 <article class="card card--price-in">
                                     <a class="card__preview" href="#">
                                         <img class="card__pic"
@@ -360,22 +364,25 @@
                                 </article>
                             </div>
                         </div>
-                        <button class="slick-prev" type="button">
-                            <svg class="slick-chevron" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+
+                        <button class="swiper__control swiper__control--prev" type="button">
+                            <svg class="swiper__chevron" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 9l7.5-7.5L13 3 7 9l6 6-1.5 1.5L4 9z"/>
                             </svg>
                             <span class="visuallyhidden">
                                 Назад
                             </span>
                         </button>
-                        <button class="slick-next" type="button">
-                            <svg class="slick-chevron" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+
+                        <button class="swiper__control swiper__control--next" type="button">
+                            <svg class="swiper__chevron" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 9L6.5 1.5 5 3l6 6-6 6 1.5 1.5L14 9z"/>
                             </svg>
                             <span class="visuallyhidden">
                                 Вперёд
                             </span>
                         </button>
+
                     </div>
                 </div>
             </section>
@@ -755,7 +762,7 @@
                     >
                 </div>
             </section>
-            <div class="footer">
+            <footer class="footer">
                 <div class="footer__primary">
                     <div class="footer__contacts">
                         <div class="footer__social">
@@ -843,13 +850,13 @@
                         <a class="link link--text-color" href="#">Конфиденциальность</a>
                     </div>
                 </div>
-            </div>
+            </footer>
         </div>
 
 
 
         <script src="../vendors/jquery/jquery-3.7.1.min.js"></script>
-        <script src="../vendors/slick/slick.min.js"></script>
+        <script src="../vendors/swiper/swiper-bundle.min.js"></script>
         <script src="../scripts/scripts.js"></script>
 
     </body>
