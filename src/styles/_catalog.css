@@ -53,6 +53,13 @@
 
     }
 
+    .catalog__more {
+        margin-top: 4px;
+    }
+        .catalog__more.button,
+        .catalog__more .button {
+            width: 100%;
+        }
 
 .catalog--reverse {
     grid-template-columns: minmax(0, 74.8958fr) minmax(0, 25.1042fr);
@@ -90,11 +97,23 @@
                 display: flex;
                 overflow-x: auto;
                 gap: 13px;
+
+                /* Прижимаем скролл к краям */
                 margin-left: calc(-1 * var(--container-padding));
                 margin-right: calc(-1 * var(--container-padding));
                 padding-left: var(--container-padding);
                 padding-right: var(--container-padding);
             }
+
+            @media (431px <= width) {
+                .catalog__menu {
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+
                 .catalog__link {
                     /*display: block;*/
                     /*padding-top: 5px;*/
