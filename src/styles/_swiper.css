@@ -16,8 +16,7 @@
         text-indent: 200%;
         cursor: pointer;
         opacity: 0;
-        transition-property: opacity;
-        transition-duration: 200ms;
+        transition: opacity 200ms;
     }
 
     .swiper--catalog:hover .swiper__control {
