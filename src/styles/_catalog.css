@@ -54,12 +54,8 @@
     }
 
     .catalog__more {
-        margin-top: 4px;
+        display: none;
     }
-        .catalog__more.button,
-        .catalog__more .button {
-            width: 100%;
-        }
 
 .catalog--reverse {
     grid-template-columns: minmax(0, 74.8958fr) minmax(0, 25.1042fr);
@@ -105,7 +101,8 @@
                 padding-right: var(--container-padding);
             }
 
-            @media (431px <= width) {
+            /* На этом диапазоне контейнер имеет максимальную ширину и прижатый скролл смотрится не оч. */
+            @media (431px <= width < 600px) {
                 .catalog__menu {
                     margin-left: 0;
                     margin-right: 0;
@@ -136,6 +133,10 @@
 
         }
 
+        .catalog__more {
+
+        }
+
 
     .catalog--reverse {
         /*grid-template-columns: minmax(0, 74.8958fr) minmax(0, 25.1042fr);*/
@@ -147,6 +148,56 @@
         .catalog--reverse .catalog__header {
             /*padding-right: 0;*/
             padding-left: 0;
+        }
+}
+
+
+
+@media (width < 600px) {
+
+    .catalog {
+        margin-top: 36px;
+    }
+        .catalog__header {
+
+        }
+            .catalog__heading {
+
+            }
+
+            .catalog__menu {
+
+            }
+                .catalog__link {
+
+                }
+
+                .catalog__link:hover {
+
+                }
+
+        .catalog__body {
+
+        }
+
+        .catalog__more {
+            display: block;
+            margin-top: 4px;
+        }
+            .catalog__more .button {
+                width: 100%;
+            }
+
+
+    .catalog--reverse {
+
+    }
+        .catalog--reverse .catalog__body {
+
+        }
+
+        .catalog--reverse .catalog__header {
+
         }
 }
 
