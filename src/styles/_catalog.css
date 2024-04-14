@@ -9,7 +9,7 @@
         flex-direction: column;
     }
         .catalog__menu {
-            padding-right: 32px;
+            padding-right: 16px;
         }
             .catalog__link {
                 display: block;
@@ -34,6 +34,14 @@
         overflow: hidden;
     }
 
+
+.catalog--reverse {
+    flex-direction: row-reverse;
+}
+    .catalog--reverse .catalog__menu {
+        padding-right: 0;
+        padding-left: 16px;
+    }
 
 
 @media (width < 900px) {
@@ -72,5 +80,13 @@
             /*flex-basis: 0;*/
             /*flex-grow: 74.8958;*/
             /*overflow: hidden;*/
+        }
+
+    .catalog--reverse {
+        flex-direction: row-reverse;
+    }
+        .catalog--reverse .catalog__menu {
+            padding-right: 0;
+            padding-left: 16px;
         }
 }
