@@ -1,4 +1,4 @@
-.chevron {
+.chevron-link {
     display: inline-flex;
     align-items: flex-start;
     vertical-align: top;
@@ -14,17 +14,17 @@
     transition: text-decoration-color var(--transition-hover);
 }
 
-.chevron:hover {
+.chevron-link:hover {
     text-decoration-color: rgb(15 98 254 / 40%);
 }
-    .chevron::after {
+    .chevron-link::after {
         content: "";
         display: block;
         margin-left: 4px;
         margin-top: 8px;
         width: 18px;
         height: 18px;
-        background-image: url("arrow-right-blue.svg");
+        background-image: url("../vectors/arrow-blue-right.svg");
         background-size: 18px 18px;
         background-repeat: no-repeat;
         background-position: center center;
